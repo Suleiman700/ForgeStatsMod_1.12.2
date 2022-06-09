@@ -1,0 +1,128 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 5/29/22 10:00 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at com.example.examplemod.chat.Chat.SendMessage(Chat.java:20)
+	at com.example.examplemod.events.OnAttackEntity.onLivingFallEvent(OnAttackEntity.java:52)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_19_OnAttackEntity_onLivingFallEvent_LivingFallEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingFall(ForgeHooks.java:627)
+	at net.minecraft.entity.EntityLivingBase.fall(EntityLivingBase.java:1314)
+	at net.minecraft.block.Block.onFallenUpon(Block.java:821)
+	at net.minecraft.entity.Entity.updateFallState(Entity.java:1132)
+	at net.minecraft.entity.EntityLivingBase.updateFallState(EntityLivingBase.java:215)
+	at net.minecraft.entity.Entity.move(Entity.java:896)
+	at net.minecraft.entity.EntityLivingBase.travel(EntityLivingBase.java:1958)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2393)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.passive.EntityRabbit.onLivingUpdate(EntityRabbit.java:274)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.example.examplemod.chat.Chat.SendMessage(Chat.java:20)
+	at com.example.examplemod.events.OnAttackEntity.onLivingFallEvent(OnAttackEntity.java:52)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_19_OnAttackEntity_onLivingFallEvent_LivingFallEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingFall(ForgeHooks.java:627)
+	at net.minecraft.entity.EntityLivingBase.fall(EntityLivingBase.java:1314)
+	at net.minecraft.block.Block.onFallenUpon(Block.java:821)
+	at net.minecraft.entity.Entity.updateFallState(Entity.java:1132)
+	at net.minecraft.entity.EntityLivingBase.updateFallState(EntityLivingBase.java:215)
+	at net.minecraft.entity.Entity.move(Entity.java:896)
+	at net.minecraft.entity.EntityLivingBase.travel(EntityLivingBase.java:1958)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2393)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.passive.EntityRabbit.onLivingUpdate(EntityRabbit.java:274)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:rabbit (net.minecraft.entity.passive.EntityRabbit)
+	Entity ID: 294
+	Entity Name: Rabbit
+	Entity's Exact location: -66.31, 70.00, 100.49
+	Entity's Block location: World: (-67,70,100), Chunk: (at 13,4,4 in -5,6; contains blocks -80,0,96 to -65,255,111), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: -0.06, -0.31, -0.04
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 8640562081880559357
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-184,64,176), Chunk: (at 8,4,0 in -12,11; contains blocks -192,0,176 to -177,255,191), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 92816 game time, 13256 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 85031 (now: false), thunder time: 22216 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Mac OS X (x86_64) version 12.2.1
+	Java Version: 1.8.0_332, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 553928192 bytes (528 MB) / 1210580992 bytes (1154 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID         | Version      | Source                                                             | Signature |
+	|:------ |:---------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft  | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp        | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML        | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge      | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | examplemod | 1.0          | main                                                               | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

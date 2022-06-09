@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: ForgeStatsMod_1.12.2
+Implementation-Version: 1.0
+Specification-Vendor: examplemodsareus
+Specification-Title: examplemod
+Implementation-Timestamp: 2022-06-07T20:20:12+0300
+Specification-Version: 1
+Implementation-Vendor: examplemodsareus
+
