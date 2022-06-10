@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.Movements.BlockEdgeEvent;
 import com.example.examplemod.Movements.FallEvent;
 import com.example.examplemod.Movements.JumpEvent;
 import com.example.examplemod.Movements.SneakEvent;
@@ -34,16 +35,17 @@ public class ExampleMod
 
         // Data
         MinecraftForge.EVENT_BUS.register(new Data());
-        FMLCommonHandler.instance().bus().register(new PlayerTick());
+//        FMLCommonHandler.instance().bus().register(new PlayerTick());
 
 
         // Combat
-        MinecraftForge.EVENT_BUS.register(new OnAttackEntity());
+//        MinecraftForge.EVENT_BUS.register(new OnAttackEntity());
 
         // Movement
-        FMLCommonHandler.instance().bus().register(new JumpEvent());
-        FMLCommonHandler.instance().bus().register(new SneakEvent());
-        FMLCommonHandler.instance().bus().register(new FallEvent());
+//        FMLCommonHandler.instance().bus().register(new JumpEvent());
+//        FMLCommonHandler.instance().bus().register(new SneakEvent());
+//        FMLCommonHandler.instance().bus().register(new FallEvent());
+        FMLCommonHandler.instance().bus().register(new BlockEdgeEvent());
 
 //        FMLCommonHandler.instance().bus().register(new EnderPearlEvent());
 //        FMLCommonHandler.instance().bus().register(new ProjectileImpact());

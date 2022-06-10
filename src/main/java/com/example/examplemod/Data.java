@@ -5,9 +5,9 @@ import net.minecraft.client.Minecraft;
 
 public class Data {
     public static String MCPlayerName = ""; //Minecraft.getMinecraft().player.getDisplayNameString(); // Minecraft player name
-
     public static String PlayerNameCustom = ""; // Custom name that can be set by player
 
+    public static String LookingDirection = "";
 
     // Get minecraft player name
     public static String getPlayerName() {
@@ -26,5 +26,17 @@ public class Data {
         return PlayerNameCustom;
     }
 
+    // Set looking direction
+    public static void setLookingDirection(int direction) {
+        if (direction == 0) LookingDirection = "SOUTH";
+        else if (direction == 1) LookingDirection = "WEST";
+        else if (direction == 2) LookingDirection = "NORTH";
+        else if (direction == 3) LookingDirection = "EAST";
+    }
+
+    // Get looking direction
+    public static String getLookingDirection() {
+        return LookingDirection;
+    }
 
 }

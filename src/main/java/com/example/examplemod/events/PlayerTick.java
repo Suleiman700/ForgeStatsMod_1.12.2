@@ -6,6 +6,7 @@ import com.example.examplemod.Inventory.InventoryCheck;
 import com.example.examplemod.Players.PlayersCoords;
 import com.example.examplemod.Players.PlayersHealth;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
@@ -45,6 +46,10 @@ public class PlayerTick {
             double posZ = globalPlayer.posZ;
             PlayersCoords.saveCoords(globalPlayerName, posX+","+posY+","+posZ);
         }
+
+        // Store player looking at direction
+        int direction = MathHelper.floor((double)((event.player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+        Data.setLookingDirection(direction);
 
 
         if (MCPlayerName == "") {
