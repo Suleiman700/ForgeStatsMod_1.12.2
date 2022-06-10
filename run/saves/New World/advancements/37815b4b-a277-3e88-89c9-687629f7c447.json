@@ -35,6 +35,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2022-06-02 23:15:36 +0300"
@@ -62,6 +68,12 @@
   "minecraft:recipes/tools/diamond_shovel": {
     "criteria": {
       "has_diamond": "2022-06-02 23:15:36 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2022-06-10 14:30:49 +0300"
     },
     "done": true
   },
@@ -133,7 +145,11 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "plains": "2022-05-28 14:56:50 +0300"
+      "beaches": "2022-06-10 15:20:31 +0300",
+      "forest_hills": "2022-06-10 15:18:54 +0300",
+      "plains": "2022-05-28 14:56:50 +0300",
+      "savanna": "2022-06-10 13:48:04 +0300",
+      "river": "2022-06-10 13:48:23 +0300"
     },
     "done": false
   },
@@ -152,6 +168,12 @@
   "minecraft:recipes/building_blocks/orange_wool": {
     "criteria": {
       "has_white_wool": "2022-05-28 04:58:18 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
     },
     "done": true
   },
@@ -197,6 +219,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_sword": {
     "criteria": {
       "has_diamond": "2022-06-02 23:15:36 +0300"
@@ -221,9 +249,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2022-06-10 14:33:30 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/jukebox": {
     "criteria": {
       "has_diamond": "2022-06-02 23:15:36 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 14:35:42 +0300"
     },
     "done": true
   },

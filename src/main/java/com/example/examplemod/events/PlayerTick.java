@@ -47,6 +47,10 @@ public class PlayerTick {
             PlayersCoords.saveCoords(globalPlayerName, posX+","+posY+","+posZ);
         }
 
+
+
+
+
         // Store player looking at direction
         int direction = MathHelper.floor((double)((event.player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
         Data.setLookingDirection(direction);

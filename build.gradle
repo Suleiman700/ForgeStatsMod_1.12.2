@@ -59,6 +59,7 @@ dependencies {
 //    implementation 'org.mongodb:mongodb-driver-sync:4.6.0'
 //    implementation 'mysql:mysql-connector-java:5.1.39'
     implementation 'mysql:mysql-connector-java:8.0.29'
+    implementation 'huffman-keybindings:huffman-keybindings:0.0.2'
 
 //    implementation 'mysql:mysql-connector-java:5.1.39'
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
@@ -118,5 +119,12 @@ publishing {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
     }
 }

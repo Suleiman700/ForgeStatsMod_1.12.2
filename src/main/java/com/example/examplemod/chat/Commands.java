@@ -2,6 +2,7 @@ package com.example.examplemod.chat;
 
 import com.example.examplemod.Data;
 import com.example.examplemod.Health.Death;
+import com.example.examplemod.Movements.BlockEdgeEvent;
 import com.example.examplemod.Players.PlayersHealth;
 import com.example.examplemod.Items.Diamond;
 import com.example.examplemod.Items.Gold;
@@ -97,6 +98,20 @@ public class Commands {
             // Get players healths
             else if (playerMessage.contains("#get_healths")) {
                 PlayersHealth.showHealths();
+                event.setCanceled(true);
+            }
+
+            // Scaffold
+            else if (playerMessage.contains("#scaffold_")) {
+                if (playerMessage.contains("#scaffold_toggle")) {
+                    BlockEdgeEvent.toggle();
+                }
+                else if (playerMessage.contains("#scaffold_autoplace_toggle")) {
+                    BlockEdgeEvent.toggleAutoPlace();
+                }
+                else if (playerMessage.contains("#scaffold_lockview_toggle")) {
+                    BlockEdgeEvent.toggleLockView();
+                }
                 event.setCanceled(true);
             }
         }

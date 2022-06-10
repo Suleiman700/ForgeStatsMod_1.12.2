@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2022-06-01 22:28:44 +0300"
@@ -97,7 +103,10 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "plains": "2022-06-03 18:14:58 +0300"
+      "beaches": "2022-06-10 15:23:58 +0300",
+      "plains": "2022-06-03 18:14:58 +0300",
+      "river": "2022-06-10 19:08:00 +0300",
+      "desert": "2022-06-10 19:21:28 +0300"
     },
     "done": false
   },
@@ -131,6 +140,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2022-06-01 22:28:44 +0300"
@@ -158,6 +173,12 @@
   "minecraft:recipes/tools/iron_shovel": {
     "criteria": {
       "has_iron_ingot": "2022-06-03 18:14:58 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
     },
     "done": true
   },
@@ -191,9 +212,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/jukebox": {
     "criteria": {
       "has_diamond": "2022-06-01 22:28:44 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "entered_water": "2022-06-10 19:18:55 +0300"
     },
     "done": true
   },

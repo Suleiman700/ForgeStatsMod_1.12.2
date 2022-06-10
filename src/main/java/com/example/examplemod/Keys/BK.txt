@@ -1,0 +1,246 @@
+package com.example.examplemod.Movements;
+
+import com.example.examplemod.Data;
+import com.example.examplemod.chat.Chat;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.settings.GameSettings;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.util.MovementInputFromOptions;
+import net.minecraft.util.math.MathHelper;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+
+import java.util.List;
+
+public class BlockEdgeEvent {
+
+    public static boolean Enabled = false;
+    public static boolean Sneak = false;
+    public static float playerX_BK = 0;
+    public static float playerY_BK = 0;
+
+    // Enable / Disable
+    public static void toggle() {
+        if (Enabled) {
+            Enabled = false;
+            Chat.SendMessage("Scaffold Disabled", "red");
+        }
+        else if (!Enabled) {
+            Enabled = true;
+            Chat.SendMessage("Scaffold Enabled", "green");
+        }
+        Sneak = Enabled;
+    }
+
+    public static boolean getSneak() {
+        return Sneak;
+    }
+
+
+
+    @SubscribeEvent
+    public void onTick(TickEvent.PlayerTickEvent event) {
+        if (event.phase != TickEvent.Phase.START) return; // see EntityPlayer.onUpdate
+        if (event.player instanceof EntityPlayerSP) {
+            final EntityPlayerSP player = (EntityPlayerSP) event.player;
+//            final EntityPlayerSP player = (EntityPlayerSP) event.player;
+
+            player.movementInput.sneak = true;
+            Minecraft.getMinecraft().player.setSneaking(true);
+
+
+            // Store player looking at direction
+            int LookingDirection2 = MathHelper.floor((double)((event.player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+            Data.setLookingDirection(LookingDirection2);
+            String LookingDirection = Data.getLookingDirection();
+
+            // Get player held item
+            String playerHeldItemName = player.getHeldItemMainhand().getUnlocalizedName();
+            int playerHeldItemCount = player.getHeldItemMainhand().getCount();
+
+            // Get building blocks
+            List BuildingBlocks = Data.getBuildingBlocks();
+
+            float playerX = (float) player.posX;
+            float playerY = (float) player.posY;
+            float playerZ = (float) player.posZ;
+            float playerHeadPitch = player.rotationPitch;
+            float blockUnderX = player.getPosition().down().getX();
+            float blockUnderZ = player.getPosition().down().getZ();
+            if (!Enabled) return;
+
+            if (LookingDirection=="NORTH") {
+//                System.out.println("NORTH");
+                Chat.SendMessage(playerZ + " - " + blockUnderZ + " = " + (playerZ-blockUnderZ) + " ||| " + Sneak, "green");
+
+                if (playerZ > blockUnderZ) {
+//                    System.out.println("OUT NORTH");
+                    // Check if player is looking down
+                    if (playerHeadPitch > 65 && playerHeadPitch < 84.5) {
+//                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+
+                        // If player is at the edge of block
+                        if (blockUnderZ-playerZ>-0.22) {
+                            Chat.SendMessage("SHOULD SNEAK", "red");
+                            Sneak = true;
+
+                            // If holding building block
+                            if (BuildingBlocks.contains(playerHeldItemName) && playerHeldItemCount >= 1) {
+                                player.rotationPitch = Float.parseFloat("82.5"); // Set camera pitch
+                                player.rotationYaw = Float.parseFloat("-180"); // Set camera yaw
+
+//                                // If player is jumping
+//                                if (playerY != playerY_BK) {
+////                                    player.setVelocity(0, 0, +0.065);
+//                                    Chat.SendMessage("JUMPING", "green");
+//                                    Sneak = true;
+//                                }
+//                                // If player not jumping
+//                                else {
+//                                    Sneak = true;
+//                                    Chat.SendMessage("WALKING", "green");
+//                                }
+//                            } else if (playerHeldItemCount <1) {
+//                                Sneak = true;
+//                            }
+
+//                            playerY_BK = playerY;
+                            }
+                        } else {
+                            Sneak = false;
+                            Chat.SendMessage("SHOULD NOT SNEAK", "red");
+                        }
+                    }
+                }
+            }
+
+            else if (LookingDirection=="EAST") {
+//                System.out.println("EAST");
+                if (playerX < blockUnderX) {
+//                    System.out.println("EAST OUT");
+
+                    // Check if player is looking down
+                    if (playerHeadPitch > 65 && playerHeadPitch < 84.5) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+
+
+                        // If player is at the edge of block
+//                        Chat.SendMessage(String.valueOf(blockUnderZ-playerZ), "green");
+                        if (playerX-blockUnderX > -0.24) {
+//                            System.out.println("EDGE");
+
+                            System.out.println(playerY + " " + playerY_BK);
+
+                            // If holding building block
+                            if (BuildingBlocks.contains(playerHeldItemName) && playerHeldItemCount >=1) {
+                                player.rotationPitch = Float.parseFloat("82"); // Set camera pitch
+                                player.rotationYaw = Float.parseFloat("-90"); // Set camera yaw
+
+                                // If player is jumping
+                                if (playerY != playerY_BK) {
+                                    player.setVelocity(+0.0000001, 0, 0);
+                                    Chat.SendMessage("JUMPING", "green");
+                                }
+                                //If player not jumping
+                                else {
+                                    player.setVelocity(+0.00001, 0, 0);
+                                    Chat.SendMessage("WALKING", "green");
+                                }
+                            } else if (playerHeldItemCount <1) {
+                                player.setVelocity(+0.05, 0, 0);
+
+                            }
+
+                            playerY_BK = playerY;
+                        }
+                    }
+                }
+            }
+
+            else if (LookingDirection=="WEST") {
+//                System.out.println("WEST");
+                if (playerX > blockUnderX) {
+//                    System.out.println("WEST OUT");
+
+                    // Check if player is looking down
+                    if (playerHeadPitch > 65 && playerHeadPitch < 84.5) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+
+
+                        // If player is at the edge of block
+//                        Chat.SendMessage(String.valueOf(blockUnderZ-playerZ), "green");
+                        if (playerX-blockUnderX < 0.24) {
+//                            System.out.println("EDGE");
+
+                            System.out.println(playerY + " " + playerY_BK);
+
+                            // If holding building block
+                            if (BuildingBlocks.contains(playerHeldItemName) && playerHeldItemCount >=1) {
+                                player.rotationPitch = Float.parseFloat("82"); // Set camera pitch
+                                player.rotationYaw = Float.parseFloat("90"); // Set camera yaw
+
+                                // If player is jumping
+                                if (playerY != playerY_BK) {
+                                    player.setVelocity(-0.0000001, 0, 0);
+                                    Chat.SendMessage("JUMPING", "green");
+                                }
+                                //If player not jumping
+                                else {
+                                    player.setVelocity(-0.00001, 0, 0);
+                                    Chat.SendMessage("WALKING", "green");
+                                }
+                            } else if (playerHeldItemCount <1) {
+                                player.setVelocity(-0.05, 0, 0);
+
+                            }
+
+                            playerY_BK = playerY;
+                        }
+                    }
+                }
+            }
+
+            else if (LookingDirection=="SOUTH"){
+//                System.out.println("SOUTH");
+                if (playerZ < blockUnderZ) {
+//                    System.out.println("SOUTH OUT");
+
+                    // Check if player is looking down
+                    if (playerHeadPitch > 65 && playerHeadPitch < 84.5) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+
+
+                        // If player is at the edge of block
+//                        Chat.SendMessage(String.valueOf(blockUnderZ-playerZ), "green");
+                        if (playerZ-blockUnderZ<-0.245) {
+//                            System.out.println("EDGE");
+
+                            // If holding building block
+                            if (BuildingBlocks.contains(playerHeldItemName) && playerHeldItemCount >=1) {
+                                player.rotationPitch = Float.parseFloat("80"); // Set camera pitch
+                                player.rotationYaw = Float.parseFloat("0"); // Set camera yaw
+
+                                // If player is jumping
+                                if (playerY != playerY_BK) {
+                                    player.setVelocity(0, 0, -0.065);
+//                                    Chat.SendMessage("JUMPING", "green");
+                                }
+                                //If player not jumping
+                                else {
+                                    player.setVelocity(0, 0, 0);
+//                                    Chat.SendMessage("WALKING", "green");
+                                }
+                            } else if (playerHeldItemCount <1) {
+                                player.setVelocity(0, 0, +0.10);
+
+                            }
+
+                            playerY_BK = playerY;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

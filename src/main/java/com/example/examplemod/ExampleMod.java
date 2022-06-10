@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.Keys.KeyInputEvent;
 import com.example.examplemod.Movements.BlockEdgeEvent;
 import com.example.examplemod.Movements.FallEvent;
 import com.example.examplemod.Movements.JumpEvent;
@@ -40,6 +41,9 @@ public class ExampleMod
 
         // Combat
 //        MinecraftForge.EVENT_BUS.register(new OnAttackEntity());
+
+        // Keybindings
+        MinecraftForge.EVENT_BUS.register(new KeyInputEvent());
 
         // Movement
 //        FMLCommonHandler.instance().bus().register(new JumpEvent());

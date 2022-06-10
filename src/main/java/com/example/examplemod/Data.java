@@ -1,13 +1,15 @@
 package com.example.examplemod;
 
 import com.example.examplemod.chat.Chat;
-import net.minecraft.client.Minecraft;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Data {
     public static String MCPlayerName = ""; //Minecraft.getMinecraft().player.getDisplayNameString(); // Minecraft player name
     public static String PlayerNameCustom = ""; // Custom name that can be set by player
-
-    public static String LookingDirection = "";
+    public static String LookingDirection = ""; // Direction that player is looking at
+    public static final List<String> BuildingBlocks = Arrays.asList("clay", "tile.clay"); // Blocks that considered as building blocks
 
     // Get minecraft player name
     public static String getPlayerName() {
@@ -20,7 +22,6 @@ public class Data {
         PlayerNameCustom = name;
         Chat.SendMessage("Custom player name has been set to: " + PlayerNameCustom, "red");
     }
-
     // Get custom player name
     public static String getCustomPlayerName() {
         return PlayerNameCustom;
@@ -33,10 +34,12 @@ public class Data {
         else if (direction == 2) LookingDirection = "NORTH";
         else if (direction == 3) LookingDirection = "EAST";
     }
-
     // Get looking direction
     public static String getLookingDirection() {
         return LookingDirection;
     }
 
+    public static List getBuildingBlocks() {
+        return BuildingBlocks;
+    }
 }

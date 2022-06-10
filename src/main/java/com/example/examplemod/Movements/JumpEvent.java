@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class JumpEvent {
 
     static int Jumps = 0;
+    public static boolean isJumping = false;
 
     public static void showCounter() {
         Chat.SendMessage("[JUMPS] " + Jumps + " times", "red");

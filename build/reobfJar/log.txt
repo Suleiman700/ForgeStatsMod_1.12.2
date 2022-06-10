@@ -1,8 +1,14 @@
 Args: "--in-jar", "X:\Minecraft\Modding\ForgeStatsMod_1.12.2\build\libs\modid-1.0.jar", "--out-jar", "X:\Minecraft\Modding\ForgeStatsMod_1.12.2\build\reobfJar\output.jar", "--srg-in", "X:\Minecraft\Modding\ForgeStatsMod_1.12.2\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\the-s\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.8.3\SpecialSource-1.8.3-shaded.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.29\16bfffda393ac4fe56f0985f1f035b37d3fc48f\mysql-connector-java-8.0.29.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\huffman-keybindings\huffman-keybindings\0.0.2\1bc221dd7b0719ed176a91e50979f01d0529468d\huffman-keybindings-0.0.2.jar
 Classpath: C:\Users\the-s\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12\forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-recomp.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\clojurescript\1.9.229\30cff19bb1335642ae60295229f4f3e3b60682f5\clojurescript-1.9.229.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\com.google.javascript\closure-compiler-unshaded\v20160315\b99f14cd8301202bb5c9f4f965a81eefc6186123\closure-compiler-unshaded-v20160315.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.19.4\748e4e0b9e4fa6b9b1fe65690aa04a9db56cfc4d\protobuf-java-3.19.4.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\data.json\0.2.6\ac3437a78d08f9db3dac7debe5a069edac282d95\data.json-0.2.6.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\tools.reader\1.0.0-beta3\2551fe91105779f8641ed51d8eb21f1bf50b49e4\tools.reader-1.0.0-beta3.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\clojure\1.8.0\313066c972b6b00f390674bf0e9f732c07f205a4\clojure-1.8.0.jar
 Classpath: C:\Users\the-s\.gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.0.13\c18446ec4d5814f447d7a79b314ba9a27cc8dbc8\mergetool-1.0.13-forge.jar
@@ -32,6 +38,8 @@ Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.15.0\ba55c13d7ac2fd44df9cc8074455719a33f375b9\log4j-core-2.15.0.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.15.0\4a5aa7e55a29391c6f66e0b259d5189aa11e45d0\log4j-api-2.15.0.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\net.minecraftforge\legacydev\0.2.3.1\f2cd4a8c9f09faf1c1e4a9a4c65df36e634f95db\legacydev-0.2.3.1-fatjar.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\google-closure-library\0.0-20160609-f42b4a24\f5585ba44bdd8981eeaf24dfd7a16921f9278b8d\google-closure-library-0.0-20160609-f42b4a24.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.mozilla\rhino\1.7R5\95f0003cea7ebf26aef5ed64c77c05fcd1ff9648\rhino-1.7R5.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
@@ -71,6 +79,9 @@ Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-ana
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar
 Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\com.google.javascript\closure-compiler-externs\v20160315\a0c252a8fced5f0a542302e3f03066c8144d7371\closure-compiler-externs-v20160315.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\args4j\args4j\2.0.26\1ebb18ebb3b379a74207d5af4ea7c8338ebd78b\args4j-2.0.26.jar
+Classpath: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.clojure\google-closure-library-third-party\0.0-20160609-f42b4a24\93ee501d8b971532e39c91af103e4e69988edbf8\google-closure-library-third-party-0.0-20160609-f42b4a24.jar
 WorkDir: X:\Minecraft\Modding\ForgeStatsMod_1.12.2\build\reobfJar
 Main: net.md_5.specialsource.SpecialSource
 ====================================

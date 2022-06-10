@@ -1,29 +1,62 @@
 package com.example.examplemod.Movements;
 
 import com.example.examplemod.Data;
-import com.ibm.icu.impl.Utility;
+import com.example.examplemod.chat.Chat;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.settings.GameSettings;
 import net.minecraft.client.settings.KeyBinding;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec2f;
-import net.minecraft.util.math.Vec3d;
-import net.minecraftforge.client.event.InputUpdateEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import static com.mojang.authlib.Agent.MINECRAFT;
+import java.util.List;
 
 public class BlockEdgeEvent {
+
+    public static boolean Enabled = false;
+    public static boolean Sneak = false;
+    public static boolean LockView = true;
+    public static boolean AutoPlace = false;
+
+    public static float playerX_BK = 0;
+    public static float playerY_BK = 0;
+    public static float playerZ_BK = 0;
+
+    // Enable / Disable
+    public static void toggle() {
+        if (Enabled) {
+            Enabled = false;
+            Chat.SendMessage("Scaffold Disabled", "red");
+        }
+        else if (!Enabled) {
+            Enabled = true;
+            Chat.SendMessage("Scaffold Enabled", "green");
+        }
+        Sneak = Enabled;
+    }
+
+    // Get sneak state
+    public static boolean getSneak() {
+        return Sneak;
+    }
+
+    // Toggle AutoPlace
+    public static void toggleAutoPlace() {
+        if (AutoPlace) AutoPlace = false;
+        else AutoPlace = true;
+        Chat.SendMessage("Scaffold AutoPlace: " + AutoPlace, "green");
+    }
+
+    // Toggle LockView
+    public static void toggleLockView() {
+        if (LockView) LockView = false;
+        else LockView = true;
+        Chat.SendMessage("Scaffold LockView: " + LockView, "green");
+    }
+
 
 
     
@@ -32,67 +65,114 @@ public class BlockEdgeEvent {
         if (event.phase != TickEvent.Phase.START) return; // see EntityPlayer.onUpdate
         if (event.player instanceof EntityPlayerSP) {
             final EntityPlayerSP player = (EntityPlayerSP) event.player;
+//            final EntityPlayerSP player = (EntityPlayerSP) event.player;
+
+            player.movementInput.sneak = true;
+            Minecraft.getMinecraft().player.setSneaking(true);
+
 
             // Store player looking at direction
-
             int LookingDirection2 = MathHelper.floor((double)((event.player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
             Data.setLookingDirection(LookingDirection2);
             String LookingDirection = Data.getLookingDirection();
 
+            // Get player held item
+            String playerHeldItemName = player.getHeldItemMainhand().getUnlocalizedName();
+            int playerHeldItemCount = player.getHeldItemMainhand().getCount();
+
+            // Get building blocks
+            List BuildingBlocks = Data.getBuildingBlocks();
+
             float playerX = (float) player.posX;
+            float playerY = (float) player.posY;
             float playerZ = (float) player.posZ;
             float playerHeadPitch = player.rotationPitch;
             float blockUnderX = player.getPosition().down().getX();
+            float blockUnderY = player.getPosition().down().getY();
             float blockUnderZ = player.getPosition().down().getZ();
 
-            if (playerHeadPitch > 80 && playerHeadPitch < 84.5) {
-                System.out.println("Can place block");
+            // Get bottom block behind player
+            Block blockClicked = Minecraft.getMinecraft().world.getBlockState(new BlockPos(blockUnderX, blockUnderY, blockUnderZ)).getBlock();
+            String playerBlockBehind = blockClicked.getUnlocalizedName();
+//             Chat.SendMessage(playerBlockBehind, "green");
+            if (!Enabled) return;
 
-                Minecraft mc = Minecraft.getMinecraft();
-                KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode());
-            }
+
+//            if (player.rotationPitch > 86) {
+//                LockView = false;
+//            }
 
 
             if (LookingDirection=="NORTH") {
-//                System.out.println("NORTH");
-
-                System.out.println(blockUnderZ - playerZ);
-
                 if (playerZ > blockUnderZ) {
-//                    System.out.println("OUT NORTH");
-
-
-                    if (blockUnderZ-playerZ>-0.22) {
+                    if (LockView) {
                         player.rotationPitch = Float.parseFloat("82.5"); // Set camera pitch
                         player.rotationYaw = Float.parseFloat("-180"); // Set camera yaw
-                        player.setSneaking(true);
-                        System.out.println(player.isSneaking());
-                        player.setVelocity(0, 0, 0);
                     }
 
-                }
-            } else if (LookingDirection=="EAST") {
-//                System.out.println("EAST");
-                if (playerX < blockUnderX) {
-                    System.out.println("OUT");
-                }
-            } else if (LookingDirection=="WEST") {
-//                System.out.println("WEST");
-                if (playerX > blockUnderX) {
-                    System.out.println("OUT");
-                }
-            } else if (LookingDirection=="SOUTH"){
-//                System.out.println("SOUTH");
-                if (playerZ < blockUnderZ) {
-                    System.out.println("OUT");
+                    if (AutoPlace) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+                    }
+
+                    Sneak = true;
+                } else {
+                    Sneak = false;
                 }
             }
 
-//            System.out.println(playerHeadPitch);
+            else if (LookingDirection=="EAST") {
+                if (playerX < blockUnderX) {
+                    Sneak = true;
 
-//            System.out.println(playerX + " " + blockUnderX);
+                    if (LockView) {
+                        player.rotationPitch = Float.parseFloat("82.9"); // Set camera pitch
+                        player.rotationYaw = Float.parseFloat("-90"); // Set camera yaw
+                    }
 
+                    if (AutoPlace) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+                    }
+                } else {
+                    Sneak = false;
+                }
+            }
 
+            else if (LookingDirection=="WEST") {
+                if (playerX > blockUnderX) {
+                    Sneak = true;
+
+                    if (LockView) {
+                        player.rotationPitch = Float.parseFloat("82.9"); // Set camera pitch
+                        player.rotationYaw = Float.parseFloat("90"); // Set camera yaw
+                    }
+
+                    if (AutoPlace) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+                    }
+                } else {
+                    Sneak = false;
+                }
+            }
+
+            else if (LookingDirection=="SOUTH"){
+                if (playerZ < blockUnderZ) {
+                    // System.out.println("SOUTH OUT");
+                    Sneak = true;
+
+                    if (LockView) {
+                        player.rotationPitch = Float.parseFloat("82.9"); // Set camera pitch
+                        player.rotationYaw = Float.parseFloat("0"); // Set camera yaw
+                    }
+
+                    if (AutoPlace) {
+                        KeyBinding.onTick(new GameSettings().keyBindUseItem.getKeyCode()); // Right click (place block)
+                    }
+                } else {
+                    Sneak = false;
+                }
+                if (playerHeadPitch > 65 && playerHeadPitch < 86) {
+                }
+            }
         }
     }
 }
