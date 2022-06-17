@@ -1,24 +1,49 @@
 package com.example.examplemod.events;
 
 import com.example.examplemod.Players.PlayersHealth;
+import com.example.examplemod.Sound.Sound;
 import com.example.examplemod.chat.Chat;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import java.io.IOException;
 
 
 public class OnAttackEntity {
 
     private static boolean enabled = true;
+    public static boolean SpeakHealthNumber = true; // Speak the number of target health when hit by player
 
     // Toggle event state
     public static void toggleState(boolean option) {
         Chat.SendMessage("[E] OnAttackEntity state has been set to: " + enabled, "red");
         enabled = option;
+    }
+
+    // Set player health announcement
+    public static void setAnnouncePlayerHealthState(boolean option) {
+        Chat.SendMessage("[E] OnAttackEntity speak health number: " + SpeakHealthNumber, "red");
+        SpeakHealthNumber = option;
+    }
+
+    // Toggle player health announcement state
+    public static void toggleAnnouncePlayerHealthState() {
+        if (SpeakHealthNumber) {
+            SpeakHealthNumber = false;
+        }
+        else {
+            SpeakHealthNumber = true;
+        }
+//        Chat.SendMessage("[E] OnAttackEntity announce target health: " + SpeakHealthNumber, "red");
+    }
+
+    // Get state of player health announcement
+    public static boolean getSpeakHealthNumberState() {
+        return SpeakHealthNumber;
     }
 
     // Show event state in player chat
@@ -28,7 +53,7 @@ public class OnAttackEntity {
 
 
     @SubscribeEvent
-    public void AttackEntityEvent(AttackEntityEvent event) {
+    public void AttackEntityEvent(AttackEntityEvent event) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if (!enabled) return;
         if (event.getTarget() == null || event.getEntityPlayer() == null) return;
 
@@ -41,6 +66,12 @@ public class OnAttackEntity {
         if (found) {
             float targetHealth = PlayersHealth.getHealth(target.getName());
             Chat.SendMessage("Attacking: " + target.getName() + " | Health: " + targetHealth, "red");
+
+            if (SpeakHealthNumber) {
+//                int targetHealth_Integer = Double.valueOf(targetHealth).intValue();
+                int targetHealth_Integer = Math.round(targetHealth);
+                Sound.PlayerPlayerHealthSound(targetHealth_Integer);
+            }
         } else {
             Chat.SendMessage("Attacking: " + target.getName(), "red");
         }

@@ -1,10 +1,8 @@
 package com.example.examplemod;
 
+import com.example.examplemod.Render.Gui;
 import com.example.examplemod.Keys.KeyInputEvent;
 import com.example.examplemod.Movements.BlockEdgeEvent;
-import com.example.examplemod.Movements.FallEvent;
-import com.example.examplemod.Movements.JumpEvent;
-import com.example.examplemod.Movements.SneakEvent;
 import com.example.examplemod.chat.Chat;
 import com.example.examplemod.chat.Commands;
 import com.example.examplemod.events.OnAttackEntity;
@@ -36,11 +34,12 @@ public class ExampleMod
 
         // Data
         MinecraftForge.EVENT_BUS.register(new Data());
-//        FMLCommonHandler.instance().bus().register(new PlayerTick());
+        FMLCommonHandler.instance().bus().register(new PlayerTick());
 
+        FMLCommonHandler.instance().bus().register(new Gui());
 
         // Combat
-//        MinecraftForge.EVENT_BUS.register(new OnAttackEntity());
+        MinecraftForge.EVENT_BUS.register(new OnAttackEntity());
 
         // Keybindings
         MinecraftForge.EVENT_BUS.register(new KeyInputEvent());

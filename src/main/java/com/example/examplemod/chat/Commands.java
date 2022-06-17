@@ -9,9 +9,10 @@ import com.example.examplemod.Items.Gold;
 import com.example.examplemod.Items.Iron;
 import com.example.examplemod.Items.Terracotta;
 import com.example.examplemod.Movements.SneakEvent;
+import com.example.examplemod.Sound.Sound;
 import com.example.examplemod.db.Database;
 import com.example.examplemod.Movements.JumpEvent;
-import com.example.examplemod.events.PlayerTick;
+import com.example.examplemod.events.OnAttackEntity;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -27,6 +28,12 @@ public class Commands {
 
         if (playerMessage != null) {
             System.out.println(playerMessage);
+
+//            if (playerMessage.contains("#help")) {
+//                System.out.println("Here");
+//                Minecraft.getMinecraft().displayGuiScreen((GuiScreen) new Gui());
+//            }
+
             if (playerMessage.contains("#stats_diamond_")) {
                 if (playerMessage.contains("#stats_diamond_help")) {
                     Diamond.ShowCommands();
@@ -52,7 +59,29 @@ public class Commands {
                 event.setCanceled(true);
             }
 
-            if (playerMessage.contains("#stats_items_")) {
+            if (playerMessage.contains("#entityattack_play_health_sound")) {
+                if (playerMessage.contains("#entityattack_play_health_sound true")) {
+                    OnAttackEntity.setAnnouncePlayerHealthState(true);
+                }
+                else if (playerMessage.contains("#entityattack_play_health_sound false")) {
+                    OnAttackEntity.setAnnouncePlayerHealthState(false);
+                }
+                else if (playerMessage.contains("#entityattack_play_health_sound toggle")) {
+                    OnAttackEntity.setAnnouncePlayerHealthState(false);
+                }
+                event.setCanceled(true);
+            }
+
+            else if (playerMessage.contains("#sound")) {
+                if (playerMessage.contains("#sound_set_volume")) {
+                    playerMessage = playerMessage.substring(playerMessage.indexOf("<") + 1);
+                    playerMessage = playerMessage.substring(0, playerMessage.indexOf(">"));
+                    Sound.setVolume(Double.parseDouble(playerMessage));
+                }
+                event.setCanceled(true);
+            }
+
+            else if (playerMessage.contains("#stats_items_")) {
                 if (playerMessage.contains("#stats_items_iron")) {
                     Iron.getStats();
                 }

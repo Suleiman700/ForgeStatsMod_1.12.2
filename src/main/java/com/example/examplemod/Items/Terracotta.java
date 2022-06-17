@@ -6,7 +6,7 @@ import com.example.examplemod.db.Database;
 public class Terracotta {
     private static String ItemName = "Terracotta";
     public static boolean ShowStats = true;
-    public static boolean UpdateDB = true; // Update to database
+    public static boolean UpdateDB = false; // Update to database
 
     public static int Current = 0;
     private static int BackUp = 0;
@@ -33,8 +33,10 @@ public class Terracotta {
     }
 
     // Show stats
-    public static void getStats() {
-        Chat.SendMessage("[Terracotta] Current: " + Current + " | Gathered: " + Gathered + " | Spent: " + Spent, "red");
+    public static String getStats() {
+        String stats = "[Terracotta] Current: " + Current + " | Gathered: " + Gathered + " | Spent: " + Spent;
+        return stats;
+//        Chat.SendMessage("[Terracotta] Current: " + Current + " | Gathered: " + Gathered + " | Spent: " + Spent, "red");
 //        System.out.println("[DIAMOND] Current: " + DiamondBackUp + " | Gathered: " + DiamondGathered + " | Spent: " + DiamondSpent);
     }
 
@@ -73,7 +75,7 @@ public class Terracotta {
             BackUp = Current; // Set backup as current amount
         }
 
-        if (ShowStats) printStats();
+//        if (ShowStats) printStats();
         if (UpdateDB) Database.UpdateTerracotta(BackUp, Gathered, Spent);
     }
 }

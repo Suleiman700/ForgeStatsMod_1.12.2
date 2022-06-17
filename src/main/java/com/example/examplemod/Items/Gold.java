@@ -12,7 +12,7 @@ import net.minecraft.util.text.event.ClickEvent;
 public class Gold {
     private static String ItemName = "Gold";
     public static boolean ShowStats = true;
-    public static boolean UpdateDB = true; // Update to database
+    public static boolean UpdateDB = false; // Update to database
 
     public static int Current = 0;
     private static int BackUp = 0;
@@ -39,9 +39,11 @@ public class Gold {
     }
 
     // Show stats
-    public static void getStats() {
-        Chat.SendMessage("[Gold] Current: " + BackUp + " | Gathered: " + Gathered + " | Spent: " + Spent, "yellow");
-        System.out.println("[Gold] Current: " + BackUp + " | Gathered: " + Gathered + " | Spent: " + Spent);
+    public static String getStats() {
+//        Chat.SendMessage("[Gold] Current: " + BackUp + " | Gathered: " + Gathered + " | Spent: " + Spent, "yellow");
+//        System.out.println("[Gold] Current: " + BackUp + " | Gathered: " + Gathered + " | Spent: " + Spent);
+        String stats = "[Gold] Current: " + BackUp + " | Gathered: " + Gathered + " | Spent: " + Spent;
+        return stats;
     }
 
     // Get gathered Iron

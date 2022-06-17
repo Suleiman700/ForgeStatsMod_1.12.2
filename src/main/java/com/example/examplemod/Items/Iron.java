@@ -11,7 +11,7 @@ import net.minecraft.util.text.event.ClickEvent;
 
 public class Iron {
     public static boolean ShowStats = false;
-    public static boolean UpdateDB = true; // Update to database
+    public static boolean UpdateDB = false; // Update to database
 
     public static int IronCurrent = 0;
     private static int IronBackUp = 0;
@@ -39,9 +39,11 @@ public class Iron {
 
 
     // Show stats
-    public static void getStats() {
-        Chat.SendMessage("[Iron] Current: " + IronBackUp + " | Gathered: " + IronGathered + " | Spent: " + IronSpent, "white");
-        System.out.println("[Iron] Current: " + IronBackUp + " | Gathered: " + IronGathered + " | Spent: " + IronSpent);
+    public static String getStats() {
+//        Chat.SendMessage("[Iron] Current: " + IronBackUp + " | Gathered: " + IronGathered + " | Spent: " + IronSpent, "white");
+//        System.out.println("[Iron] Current: " + IronBackUp + " | Gathered: " + IronGathered + " | Spent: " + IronSpent);
+        String stats = "[Iron] Current: " + IronBackUp + " | Gathered: " + IronGathered + " | Spent: " + IronSpent;
+        return stats;
     }
 
     // Get gathered Iron

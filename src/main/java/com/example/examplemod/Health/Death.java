@@ -13,32 +13,32 @@ public class Death {
     public static int count = 0;
     public static boolean saveToDB = true;
 
-    @SubscribeEvent
-    public void onDeath(LivingDeathEvent event) {
-        Entity entity = event.getEntity();
-        // If player died
-        if (entity instanceof EntityPlayer) {
-            String entityPlayerName = entity.getDisplayName().getFormattedText();
-//            String playerName = PlayerTick.getPlayerName();
-            String playerName = Data.getCustomPlayerName();
-            System.out.println(playerName);
-
+//    @SubscribeEvent
+//    public void onDeath(LivingDeathEvent event) {
+//        Entity entity = event.getEntity();
+//        // If player died
+//        if (entity instanceof EntityPlayer) {
+//            String entityPlayerName = entity.getDisplayName().getFormattedText();
+////            String playerName = PlayerTick.getPlayerName();
+//            String playerName = Data.getCustomPlayerName();
 //            System.out.println(playerName);
-//            System.out.println(entityPlayerName);
-
-            if (entityPlayerName.contains(playerName) || playerName.contains(entityPlayerName) || playerName == entityPlayerName) {
-                count++;
-                if (saveToDB) {
-                    Database.SaveDeath(count);
-                }
-            }
-        }
-        // If non-player died
-        else {
-            String name = event.getEntity().getName();
-            Chat.SendMessage("Died: " + name, "yellow");
-        }
-    }
+//
+////            System.out.println(playerName);
+////            System.out.println(entityPlayerName);
+//
+//            if (entityPlayerName.contains(playerName) || playerName.contains(entityPlayerName) || playerName == entityPlayerName) {
+//                count++;
+//                if (saveToDB) {
+//                    Database.SaveDeath(count);
+//                }
+//            }
+//        }
+//        // If non-player died
+//        else {
+//            String name = event.getEntity().getName();
+//            Chat.SendMessage("Died: " + name, "yellow");
+//        }
+//    }
 
     // Reset death counter
     public static void resetCount() {

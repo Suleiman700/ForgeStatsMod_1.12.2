@@ -11,7 +11,7 @@ import net.minecraft.util.text.event.ClickEvent;
 
 public class Diamond {
     public static boolean ShowStats = true;
-    public static boolean UpdateDB = true; // Update to database
+    public static boolean UpdateDB = false; // Update to database
 
     public static int DiamondCurrent = 0;
     private static int DiamondBackUp = 0;
@@ -39,8 +39,10 @@ public class Diamond {
     }
 
     // Show stats
-    public static void getStats() {
-        Chat.SendMessage("[DIAMOND] Current: " + DiamondBackUp + " | Gathered: " + DiamondGathered + " | Spent: " + DiamondSpent, "blue");
+    public static String getStats() {
+//        Chat.SendMessage("[DIAMOND] Current: " + DiamondBackUp + " | Gathered: " + DiamondGathered + " | Spent: " + DiamondSpent, "blue");
+        String stats = "[DIAMOND] Current: " + DiamondBackUp + " | Gathered: " + DiamondGathered + " | Spent: " + DiamondSpent;
+        return stats;
 //        System.out.println("[DIAMOND] Current: " + DiamondBackUp + " | Gathered: " + DiamondGathered + " | Spent: " + DiamondSpent);
     }
 

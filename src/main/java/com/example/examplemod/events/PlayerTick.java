@@ -3,7 +3,7 @@ package com.example.examplemod.events;
 import com.example.examplemod.Data;
 import com.example.examplemod.Health.Health;
 import com.example.examplemod.Inventory.InventoryCheck;
-import com.example.examplemod.Players.PlayersCoords;
+//import com.example.examplemod.Players.PlayersCoords;
 import com.example.examplemod.Players.PlayersHealth;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.MathHelper;
@@ -15,7 +15,7 @@ public class PlayerTick {
     private int tickCounter2 = 0;
 //    public static String PlayerName = ""; // Toy_HuNi
     public static boolean CheckOtherPlayersHealth = true; // Check and store other players health
-    public static boolean CheckOtherPlayersCoords = true; // Check and store other players coordinates
+    public static boolean CheckOtherPlayersCoords = false; // Check and store other players coordinates
 
 
     @SubscribeEvent
@@ -37,15 +37,15 @@ public class PlayerTick {
         }
 
         // Save global players coordinates
-        if (CheckOtherPlayersCoords) {
-            EntityPlayer globalPlayer = event.player;
-            String globalPlayerName = globalPlayer.getDisplayNameString();
-
-            double posX = globalPlayer.posX;
-            double posY = globalPlayer.posY;
-            double posZ = globalPlayer.posZ;
-            PlayersCoords.saveCoords(globalPlayerName, posX+","+posY+","+posZ);
-        }
+//        if (CheckOtherPlayersCoords) {
+//            EntityPlayer globalPlayer = event.player;
+//            String globalPlayerName = globalPlayer.getDisplayNameString();
+//
+//            double posX = globalPlayer.posX;
+//            double posY = globalPlayer.posY;
+//            double posZ = globalPlayer.posZ;
+//            PlayersCoords.saveCoords(globalPlayerName, posX+","+posY+","+posZ);
+//        }
 
 
 

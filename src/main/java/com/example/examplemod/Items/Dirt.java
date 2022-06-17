@@ -5,7 +5,7 @@ import com.example.examplemod.db.Database;
 
 public class Dirt {
     public static boolean ShowStats = true;
-    public static boolean UpdateDB = true; // Update to database
+    public static boolean UpdateDB = false; // Update to database
 
     public static int DirtCurrent = 0;
     private static int DirtBackUp = 0;

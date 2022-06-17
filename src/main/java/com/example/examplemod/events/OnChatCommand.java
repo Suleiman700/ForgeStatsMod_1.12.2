@@ -3,8 +3,11 @@ package com.example.examplemod.events;
 
 //import com.example.examplemod.Gui.Gui;
 
+import com.example.examplemod.Render.Gui;
 import com.example.examplemod.Movements.JumpEvent;
 import com.example.examplemod.chat.Chat;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -27,7 +30,7 @@ public class OnChatCommand {
             if (playerMessage.contains("#help")) {
                 System.out.println("Here");
 //
-//                Minecraft.getMinecraft().displayGuiScreen((GuiScreen) new Gui());
+                Minecraft.getMinecraft().displayGuiScreen((GuiScreen) new Gui());
 //                Gui.test();
 
                 Chat.SendMessage(String.valueOf(BlockEvent.PlacedBlocks), "red");
