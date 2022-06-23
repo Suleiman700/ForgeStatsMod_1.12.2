@@ -4,6 +4,7 @@ import com.example.examplemod.Data;
 import com.example.examplemod.Health.Health;
 import com.example.examplemod.Inventory.InventoryCheck;
 //import com.example.examplemod.Players.PlayersCoords;
+import com.example.examplemod.Outliner.Controller_Outliner;
 import com.example.examplemod.Players.PlayersHealth;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.MathHelper;
@@ -78,6 +79,9 @@ public class PlayerTick {
                     // Check sneaking
 //                    boolean sneakState = player.isSneaking();
 //                    Sneak.storeSneaking(sneakState);
+
+                    // Re-enable outliner, Because new dropped items & players need to be set glowing true
+                    Controller_Outliner.UpdateOutliner();
                 }
 
                 else if (tickCounter > 500) tickCounter = 0;

@@ -5,6 +5,7 @@ import com.example.examplemod.Items.Gold;
 import com.example.examplemod.Items.Iron;
 import com.example.examplemod.Items.Terracotta;
 import com.example.examplemod.Movements.BlockEdgeEvent;
+import com.example.examplemod.Outliner.Players_Outliner;
 import com.example.examplemod.Sound.Sound;
 import com.example.examplemod.events.OnAttackEntity;
 import net.minecraft.client.Minecraft;
@@ -91,7 +92,7 @@ public class Gui extends GuiScreen {
         buttonList.add(toggle_announce_target_health = new GuiButton(TOGGLE_ANNOUNCE_TARGET_HEALTH, 5, 55, 200, 20, "Announce Target Health: " + OnAttackEntity.getSpeakHealthNumberState()));
         buttonList.add(announce_target_health_volume = new GuiSlider(ANNOUNCE_TARGET_HEALTH_VOLUME, 206, 55, 200, 20, "Volume ", "", 0, 1, Sound.getVolume(), true, true));
 
-        buttonList.add(players_glow_effect = new GuiButton(PLAYERS_GLOW_EFFECT, 5, 80, 100, 20, "ESP: " + ESP.getState()));
+        buttonList.add(players_glow_effect = new GuiButton(PLAYERS_GLOW_EFFECT, 5, 80, 100, 20, "ESP: " + Players_Outliner.getState()));
         super.initGui();
     }
 
@@ -119,8 +120,8 @@ public class Gui extends GuiScreen {
                 Sound.setVolume(volume);
                 break;
             case PLAYERS_GLOW_EFFECT:
-                ESP.toggleState();
-                players_glow_effect.displayString = "ESP: " + ESP.getState();
+                Players_Outliner.toggleState();
+                players_glow_effect.displayString = "ESP: " + Players_Outliner.getState();
                 break;
         }
         super.actionPerformed(button);

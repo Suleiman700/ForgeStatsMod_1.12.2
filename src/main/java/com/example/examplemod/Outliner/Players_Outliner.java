@@ -1,20 +1,23 @@
-package com.example.examplemod.Render;
+package com.example.examplemod.Outliner;
 
+import com.example.examplemod.chat.Chat;
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+import net.minecraft.util.EnumHand;
 
-import java.util.List;
-
-public class ESP {
+public class Players_Outliner {
 
     public static boolean Enabled = false;
-    public static boolean Enabled_Items = true;
 
     public static boolean getState() {
         return Enabled;
+    }
+
+    public static void re_enable() {
+        for (EntityPlayer p : Minecraft.getMinecraft().world.playerEntities) {
+            p.setGlowing(Enabled);
+        }
     }
 
     public static void toggleState() {
@@ -25,8 +28,6 @@ public class ESP {
             Enabled = true;
         }
 
-        for (EntityPlayer p : Minecraft.getMinecraft().world.playerEntities) {
-            p.setGlowing(Enabled);
-        }
+        re_enable();
     }
 }
