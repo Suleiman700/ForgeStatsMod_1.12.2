@@ -1,47 +1,47 @@
-[05:19:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[05:19:11] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[05:19:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[05:19:11] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
-[05:19:11] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_302, running on Windows 10:amd64:10.0, installed at C:\Users\the-s\.jdks\corretto-1.8.0_302\jre
-[05:19:11] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[05:19:11] [main/ERROR] [FML]: Full: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[05:19:11] [main/ERROR] [FML]: Trimmed: c:/users/the-s/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[05:19:11] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[05:19:11] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[05:19:12] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[05:19:12] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[05:19:12] [main/INFO] [FML]: Searching X:\Minecraft\Modding\ForgeStatsMod_1.12.2\run\.\mods for mods
-[05:19:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[05:19:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[05:19:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[05:19:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[05:19:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[05:19:13] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[05:19:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[05:19:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[05:19:13] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[05:19:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[05:19:13] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[05:19:14] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player609
-[05:19:16] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[05:19:17] [Client thread/INFO] [FML]: -- System Details --
+[19:23:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[19:23:15] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[19:23:15] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[19:23:15] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[19:23:15] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_302, running on Windows 10:amd64:10.0, installed at C:\Users\the-s\.jdks\corretto-1.8.0_302\jre
+[19:23:15] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[19:23:15] [main/ERROR] [FML]: Full: C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[19:23:15] [main/ERROR] [FML]: Trimmed: c:/users/the-s/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[19:23:15] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:23:15] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[19:23:16] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[19:23:16] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[19:23:16] [main/INFO] [FML]: Searching X:\Minecraft\Modding\ForgeStatsMod_1.12.2\run\.\mods for mods
+[19:23:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:23:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:23:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:23:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:23:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:23:17] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[19:23:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:23:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:23:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:23:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:23:17] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[19:23:18] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player703
+[19:23:20] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[19:23:20] [Client thread/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_302, Amazon.com Inc.
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
-	Memory: 864732760 bytes (824 MB) / 1037565952 bytes (989 MB) up to 3797417984 bytes (3621 MB)
+	Memory: 732996088 bytes (699 MB) / 899678208 bytes (858 MB) up to 3797417984 bytes (3621 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 472.12' Renderer: 'NVIDIA GeForce GTX 1050 Ti/PCIe/SSE2'
-[05:19:17] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
-[05:19:17] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[05:19:17] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
-[05:19:17] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
-[05:19:17] [Client thread/INFO] [FML]: Searching X:\Minecraft\Modding\ForgeStatsMod_1.12.2\run\.\mods for mods
-[05:19:19] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+[19:23:21] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[19:23:21] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[19:23:21] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[19:23:21] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[19:23:21] [Client thread/INFO] [FML]: Searching X:\Minecraft\Modding\ForgeStatsMod_1.12.2\run\.\mods for mods
+[19:23:22] [Client thread/ERROR] [FML]: Unable to read a class file correctly
 java.lang.IllegalArgumentException: null
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
@@ -70,7 +70,7 @@ java.lang.IllegalArgumentException: null
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
 	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
 	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
-[05:19:19] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\6.2\a9690730f92cc79eeadc20e400ebb41eccce10b1\asm-util-6.2.jar - probably a corrupt zip
+[19:23:22] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\6.2\a9690730f92cc79eeadc20e400ebb41eccce10b1\asm-util-6.2.jar - probably a corrupt zip
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -103,7 +103,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/WARN] [FML]: Zip file asm-util-6.2.jar failed to read properly, it will be ignored
+[19:23:22] [Client thread/WARN] [FML]: Zip file asm-util-6.2.jar failed to read properly, it will be ignored
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -136,7 +136,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+[19:23:22] [Client thread/ERROR] [FML]: Unable to read a class file correctly
 java.lang.IllegalArgumentException: null
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
@@ -165,7 +165,7 @@ java.lang.IllegalArgumentException: null
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
 	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
 	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
-[05:19:19] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\6.2\c7d9a90d221cbb977848d2c777eb3aa7637e89df\asm-analysis-6.2.jar - probably a corrupt zip
+[19:23:22] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\6.2\c7d9a90d221cbb977848d2c777eb3aa7637e89df\asm-analysis-6.2.jar - probably a corrupt zip
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -198,7 +198,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/WARN] [FML]: Zip file asm-analysis-6.2.jar failed to read properly, it will be ignored
+[19:23:22] [Client thread/WARN] [FML]: Zip file asm-analysis-6.2.jar failed to read properly, it will be ignored
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -231,7 +231,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+[19:23:22] [Client thread/ERROR] [FML]: Unable to read a class file correctly
 java.lang.IllegalArgumentException: null
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
@@ -260,7 +260,7 @@ java.lang.IllegalArgumentException: null
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
 	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
 	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
-[05:19:19] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar - probably a corrupt zip
+[19:23:22] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar - probably a corrupt zip
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -293,7 +293,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/WARN] [FML]: Zip file asm-tree-6.2.jar failed to read properly, it will be ignored
+[19:23:22] [Client thread/WARN] [FML]: Zip file asm-tree-6.2.jar failed to read properly, it will be ignored
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -326,7 +326,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+[19:23:22] [Client thread/ERROR] [FML]: Unable to read a class file correctly
 java.lang.IllegalArgumentException: null
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
@@ -355,7 +355,7 @@ java.lang.IllegalArgumentException: null
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
 	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
 	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
-[05:19:19] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar - probably a corrupt zip
+[19:23:22] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\the-s\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar - probably a corrupt zip
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -388,7 +388,7 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/WARN] [FML]: Zip file asm-6.2.jar failed to read properly, it will be ignored
+[19:23:22] [Client thread/WARN] [FML]: Zip file asm-6.2.jar failed to read properly, it will be ignored
 net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
 
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
@@ -421,481 +421,146 @@ Caused by: java.lang.IllegalArgumentException
 	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
 	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
 	... 23 more
-[05:19:19] [Client thread/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
-[05:19:19] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 102528100 nanos
-[05:19:19] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, examplemod] at CLIENT
-[05:19:19] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, examplemod] at SERVER
-[05:19:20] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Example Mod
-[05:19:20] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[05:19:20] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
-[05:19:20] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[05:19:20] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[05:19:20] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[05:19:20] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[05:19:20] [Client thread/INFO] [FML]: Applying holder lookups
-[05:19:20] [Client thread/INFO] [FML]: Holder lookups applied
-[05:19:20] [Client thread/INFO] [FML]: Applying holder lookups
-[05:19:20] [Client thread/INFO] [FML]: Holder lookups applied
-[05:19:20] [Client thread/INFO] [FML]: Applying holder lookups
-[05:19:20] [Client thread/INFO] [FML]: Holder lookups applied
-[05:19:20] [Client thread/INFO] [FML]: Applying holder lookups
-[05:19:20] [Client thread/INFO] [FML]: Holder lookups applied
-[05:19:20] [Client thread/INFO] [FML]: Injecting itemstacks
-[05:19:20] [Client thread/INFO] [FML]: Itemstack injection complete
-[05:19:22] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[05:19:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[05:19:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[05:19:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[05:19:22] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
-[05:19:22] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[05:19:26] [Client thread/INFO] [FML]: Max texture size: 16384
-[05:19:28] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[05:19:29] [Client thread/INFO] [FML]: Applying holder lookups
-[05:19:29] [Client thread/INFO] [FML]: Holder lookups applied
-[05:19:29] [Client thread/INFO] [FML]: Injecting itemstacks
-[05:19:29] [Client thread/INFO] [FML]: Itemstack injection complete
-[05:19:29] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
-[05:19:29] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
-[05:19:30] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[05:19:32] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to 10.0.0.15, 64908
-[05:19:34] [Netty Client IO #0/WARN] [net.minecraft.client.network.NetHandlerLoginClient]: Couldn't connect to auth servers but will continue to join LAN
-[05:19:34] [Netty Client IO #0/INFO] [FML]: Aborting client handshake "VANILLA"
-[05:19:34] [Netty Client IO #0/INFO] [FML]: [Netty Client IO #0] Client side vanilla connection established
-[05:19:36] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 36 advancements
-[05:19:38] [pool-2-thread-1/ERROR] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService]: Signature is missing from textures payload
-[05:19:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:19:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:19:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:19:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST
-[05:19:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:19:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:19:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH
-[05:19:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:19:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:19:47] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:19:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:19:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:19:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:19:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:27:16] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:27:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:27:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:27:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:27:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:27:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:27:21] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:27:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:27:52] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:27:52] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:27:53] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:27:53] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:27:57] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:27:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:27:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:27:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:28:00] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:28:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:28:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:28:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:29:14] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:29:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:29:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:29:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:29:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:29:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:30:00] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:30:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:30:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:30:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:30:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:30:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:30:22] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:30:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:31:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:31:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:31:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:31:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:31:28] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:31:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:31:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:31:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:31:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:31:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:31:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:31:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:31:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:31:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:31:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:31:47] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:31:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:31:50] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:31:50] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:31:50] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:31:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:32:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:32:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:32:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:32:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:32:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:32:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:32:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:32:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:32:52] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:32:52] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:32:52] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:32:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:33:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:33:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:33:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:33:08] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:33:08] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:33:08] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:33:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:33:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:33:13] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:16] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:33:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:33:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:33:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:33:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:42] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH
-[05:33:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:33:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:33:54] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:33:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:33:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:33:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:33:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH
-[05:33:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:34:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:34:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:34:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:34:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:34:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:34:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:21] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:34:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:34:23] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:26] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:26] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:26] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:34:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:34:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:34:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:01] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:35:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:35:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:35:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:35:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:35] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:35:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:35:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:38] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:39] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:35:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:35:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:35:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:35:51] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:35:51] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:51] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:35:51] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:35:51] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:36:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:36:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:36:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:36:20] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:31] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:36:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:36:37] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:39] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:36:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:36:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:36:42] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:36:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:36:43] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:36:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:37:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:37:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:37:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:37:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:37:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:37:12] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:37:12] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:37:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:37:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:37:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:37:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:37:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:37:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:37:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:37:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:38:05] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:38:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:38:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:38:56] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:38:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:38:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:39:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:39:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:39:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:39:09] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:39:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH
-[05:39:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH
-[05:40:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:04] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:40:04] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:40:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:08] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:25] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:25] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:25] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:40:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:40:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:40:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:40:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:40:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:41:12] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:41:13] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:41:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:41:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:41:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:41:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:41:18] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:41:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:41:24] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:41:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:41:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:41:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:41:24] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:41:35] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:42:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:42:53] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:42:53] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:42:54] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:42:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:42:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:42:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:42:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:42:56] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:42:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:42:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:42:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:42:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:42:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:42:59] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:43:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:43:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:43:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:43:14] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:43:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:43:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:43:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:43:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:43:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SOUTH_WEST
-[05:43:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:43:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:43:22] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:43:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:43:23] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST
-[05:43:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST
-[05:43:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:43:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:43:55] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:43:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:43:56] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:25] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:26] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:26] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:37] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:54] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:55] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:57] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:44:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:44:58] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:45:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:40] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:45:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:45:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:46] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:45:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:45:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:45:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:45:48] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:01] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:46:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:46:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:11] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:14] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:16] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WEST_NORTH
-[05:46:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:17] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:46:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:21] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:46:22] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:46:22] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:46:23] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST_SOUTH
-[05:46:23] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:23] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 5 blocks of obsidian around the egg
-[05:46:29] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player609> asd
-[05:46:29] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player609> asd
-[05:46:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH_EAST
-[05:46:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:30] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 0 blocks of obsidian around the egg
-[05:46:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EAST
-[05:46:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found Dragon Egg
-[05:46:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Found 1 blocks of obsidian around the egg
-[05:46:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] NORTH
-[05:47:05] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[05:47:05] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[05:47:05] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[19:23:22] [Client thread/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[19:23:22] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, examplemod] at CLIENT
+[19:23:22] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, examplemod] at SERVER
+[19:23:23] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Example Mod
+[19:23:23] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[19:23:23] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 111431800 nanos
+[19:23:23] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[19:23:23] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[19:23:23] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[19:23:23] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[19:23:23] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[19:23:23] [Client thread/INFO] [FML]: Applying holder lookups
+[19:23:23] [Client thread/INFO] [FML]: Holder lookups applied
+[19:23:23] [Client thread/INFO] [FML]: Applying holder lookups
+[19:23:23] [Client thread/INFO] [FML]: Holder lookups applied
+[19:23:23] [Client thread/INFO] [FML]: Applying holder lookups
+[19:23:23] [Client thread/INFO] [FML]: Holder lookups applied
+[19:23:23] [Client thread/INFO] [FML]: Applying holder lookups
+[19:23:23] [Client thread/INFO] [FML]: Holder lookups applied
+[19:23:23] [Client thread/INFO] [FML]: Injecting itemstacks
+[19:23:23] [Client thread/INFO] [FML]: Itemstack injection complete
+[19:23:24] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[19:23:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[19:23:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:23:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[19:23:25] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
+[19:23:25] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[19:23:29] [Client thread/INFO] [FML]: Max texture size: 16384
+[19:23:31] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[19:23:32] [Client thread/INFO] [FML]: Applying holder lookups
+[19:23:32] [Client thread/INFO] [FML]: Holder lookups applied
+[19:23:32] [Client thread/INFO] [FML]: Injecting itemstacks
+[19:23:32] [Client thread/INFO] [FML]: Itemstack injection complete
+[19:23:32] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[19:23:32] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[19:23:33] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[19:23:40] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[19:23:40] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[19:23:40] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[19:23:40] [Server thread/INFO] [FML]: Applying holder lookups
+[19:23:40] [Server thread/INFO] [FML]: Holder lookups applied
+[19:23:40] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@24794a24)
+[19:23:41] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[19:23:41] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@24794a24)
+[19:23:41] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@24794a24)
+[19:23:41] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[19:23:42] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 99%
+[19:23:42] [Server thread/INFO] [FML]: Unloading dimension -1
+[19:23:42] [Server thread/INFO] [FML]: Unloading dimension 1
+[19:23:42] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[19:23:43] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[19:23:43] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[19:23:43] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42,examplemod@1.0
+[19:23:43] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[19:23:43] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[19:23:43] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player703[local:E:b473ca54] logged in with entity id 430 at (253.20043728166058, 64.0, 308.09091087919296)
+[19:23:43] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player703 joined the game
+[19:23:43] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player703 has made the advancement [Ice Bucket Challenge]
+[19:23:43] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player703 has reached the goal [The Next Generation]
+[19:23:44] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:23:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:23:44] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: Player703 has made the advancement [Ice Bucket Challenge]
+[19:23:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player703 has made the advancement [Ice Bucket Challenge]
+[19:23:44] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: Player703 has reached the goal [The Next Generation]
+[19:23:44] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player703 has reached the goal [The Next Generation]
+[19:23:44] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 70 advancements
+[19:23:45] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:23:45] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:23:52] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:23:52] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:24:02] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player703> #set_name
+[19:24:02] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player703> #set_name
+[19:24:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Your name was set to: Player703
+[19:24:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Custom player name has been set to: Player703
+[19:24:07] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:24:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:24:33] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:24:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:24:33] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:25:03] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:25:04] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:25:05] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:25:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:25:36] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:25:39] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:25:41] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player703> hello
+[19:25:41] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player703> hello
+[19:25:41] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player703> hello
+[19:25:42] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:25:43] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:25:43] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:27:00] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player703: Set the time to 1000]
+[19:27:00] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: Set the time to 1000
+[19:27:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Set the time to 1000
+[19:27:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:27:01] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:27:07] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:07] [Server thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:09] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:09] [Server thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:10] [Server thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:12] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:12] [Server thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Attacking: Chicken
+[19:27:18] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:27:18] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:28:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:28:00] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:28:02] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 1 Obsidian blocks around egg
+[19:28:05] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 2 Obsidian blocks around egg
+[19:28:10] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:13] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player703> hello there
+[19:28:13] [Client thread/INFO] [STDOUT]: [com.example.examplemod.chat.Commands:clientChat:30]: <Player703> hello there
+[19:28:13] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player703> hello there
+[19:28:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 2 Obsidian blocks around egg
+[19:28:15] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:15] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:28:15] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:28:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 2 Obsidian blocks around egg
+[19:28:19] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 0 Players In Region 
+[19:28:25] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:28:25] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:31:58] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 70 advancements
+[19:32:27] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:32:28] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:33:32] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:33:32] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:33:46] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[19:33:46] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:34:01] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[19:34:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[19:34:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[19:34:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[19:34:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[19:34:01] [Server thread/INFO] [FML]: Unloading dimension 0
+[19:34:02] [Server thread/INFO] [FML]: Applying holder lookups
+[19:34:02] [Server thread/INFO] [FML]: Holder lookups applied
+[19:34:02] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[19:34:02] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

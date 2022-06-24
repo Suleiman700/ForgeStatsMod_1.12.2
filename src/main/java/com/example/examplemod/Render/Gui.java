@@ -1,5 +1,7 @@
 package com.example.examplemod.Render;
 
+import com.example.examplemod.FindInWorld.FindAndCount;
+import com.example.examplemod.FindInWorld.FindPlayersInRegion;
 import com.example.examplemod.Items.Diamond;
 import com.example.examplemod.Items.Gold;
 import com.example.examplemod.Items.Iron;
@@ -56,6 +58,9 @@ public class Gui extends GuiScreen {
     GuiButton arrow_hit_target_info;
     final int ARROW_HIT_TARGET_INFO = 7;
 
+    GuiButton find_obsidian_around_egg;
+    final int FIND_OBSIDIAN_AROUND_EGG = 8;
+
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         Minecraft.getMinecraft().renderEngine.bindTexture(texture);
@@ -107,6 +112,8 @@ public class Gui extends GuiScreen {
         buttonList.add(items_glow_effect = new GuiButton(ITEMS_GLOW_EFFECT, 5, 105, 150, 20, "Items ESP: " + Items_Outliner.getState()));
         buttonList.add(arrows_glow_effect = new GuiButton(ARROWS_GLOW_EFFECT, 5, 130, 150, 20, "Arrows ESP: " + Arrows_Outliner.getState()));
         buttonList.add(arrow_hit_target_info = new GuiButton(ARROW_HIT_TARGET_INFO, 5, 155, 200, 20, "Arrows Hit Info: " + PlayerProjectileDamage.getState()));
+
+        buttonList.add(find_obsidian_around_egg = new GuiButton(FIND_OBSIDIAN_AROUND_EGG, 5, 180, 200, 20, "Count Obsidian Around Egg"));
         super.initGui();
     }
 
@@ -148,6 +155,10 @@ public class Gui extends GuiScreen {
             case ARROW_HIT_TARGET_INFO:
                 PlayerProjectileDamage.toggleState();
                 arrow_hit_target_info.displayString = "Arrows Hit Info: " + PlayerProjectileDamage.getState();
+                break;
+            case FIND_OBSIDIAN_AROUND_EGG:
+                FindAndCount.FindAndCountObsidianAroundEgg();
+                FindPlayersInRegion.find();
                 break;
         }
         super.actionPerformed(button);

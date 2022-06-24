@@ -1,17 +1,20 @@
 package com.example.examplemod.Keys;
 
-import com.example.examplemod.Data;
+import com.example.examplemod.FindInWorld.FindAndCount;
+import com.example.examplemod.FindInWorld.FindPlayersInRegion;
 import com.example.examplemod.Outliner.*;
 import com.example.examplemod.Render.Gui;
 import com.example.examplemod.Movements.BlockEdgeEvent;
 import com.example.examplemod.chat.Chat;
-import net.minecraft.block.Block;
+import ibxm.Player;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
+import net.minecraft.client.renderer.RenderGlobal;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.client.event.InputUpdateEvent;
+import net.minecraftforge.client.event.RenderBlockOverlayEvent;
+import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import org.lwjgl.input.Keyboard;
@@ -23,19 +26,76 @@ public class KeyInputEvent {
 
 //    public static boolean Sneak = false;
 
+//    @SubscribeEvent
+//    public void RenderBlockOverlay(RenderBlockOverlayEvent event) {
+//        Chat.SendMessage("here", "green");
+//    }
+
+
+//    @SubscribeEvent
+//    public void render(RenderWorldLastEvent event){
+////        DoMyRendering(event.getPartialTicks());
+////        Chat.SendMessage(String.valueOf(event.getListenerList().), "green");
+////        RenderGlobal name = event.getContext();
+////        GL11.glDisable(GL11.GL_TEXTURE_2D);
+////        GL11.glColor4f(0.0F, 1.0F, 0.0F, 0.4F);
+//    }
+
+
+    public void DoMyRendering(float partialTickTime)
+    {
+        EntityPlayerSP player = Minecraft.getMinecraft().player;
+        double x = player.lastTickPosX + (player.posX - player.lastTickPosX) * partialTickTime;
+        double y = player.lastTickPosY + (player.posY - player.lastTickPosY) * partialTickTime;
+        double z = player.lastTickPosZ + (player.posZ - player.lastTickPosZ) * partialTickTime;
+
+        GL11.glPushMatrix();
+        GL11.glTranslated(-x, -y, -z); //go from cartesian x,y,z coordinates to in-world x,y,z coordinates
+        GL11.glEnable(GL11.GL_DEPTH_TEST);
+
+        double minX = 0 + 0.02;
+        double maxX = 1 - 0.02;
+        double maxY = 10 + 0.02;
+        double minZ = 0 + 0.02;
+        double maxZ = 1 - 0.02;
+
+        //render an "X" using 2 lines at (0, 10, 0) in game
+        GL11.glBegin(GL11.GL_LINES); //begin drawing lines defined by 2 vertices
+
+        GL11.glColor4f(1f, 1f, 1f, 0.5f); //alpha must be > 0.1
+        GL11.glVertex3d(maxX, maxY, maxZ);
+        GL11.glVertex3d(minX, maxY, minZ);
+        GL11.glVertex3d(maxX, maxY, minZ);
+        GL11.glVertex3d(minX, maxY, maxZ);
+
+        GL11.glEnd();
+
+        //cleanup
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glPopMatrix();
+    }
+
     @SubscribeEvent
     public void KeyInputEvent(InputEvent.KeyInputEvent event) {
 //        Chat.SendMessage(String.valueOf(Keyboard.getEventKey()), "green");
 
 
         // Toggle scaffold
-        if (Keyboard.isKeyDown(Keyboard.KEY_TAB)) {
+        if (Keyboard.isKeyDown(Keyboard.KEY_F8)) {
             BlockEdgeEvent.toggle();
         }
 
         // Show GUI
         else if (Keyboard.isKeyDown(Keyboard.KEY_F12)) {
             Minecraft.getMinecraft().displayGuiScreen((GuiScreen) new Gui());
+        }
+
+        // Find dragon egg and count obsidian
+        else if (Keyboard.isKeyDown(Keyboard.KEY_F9)) {
+            FindAndCount.FindAndCountObsidianAroundEgg();
+            FindPlayersInRegion.find();
+
+//            Minecraft.getMinecraft().fontRenderer.drawString("works", 50, 50, 0xfff, false);
         }
 
         // ESP
@@ -45,137 +105,6 @@ public class KeyInputEvent {
 //            Items_Outliner.toggleState();
 //            Arrows_Outliner.toggleState();
 //            Blocks_Outliner.toggleState();
-
-            BlockPos posStart = Minecraft.getMinecraft().player.getPosition();
-            Block block = Minecraft.getMinecraft().world.getBlockState(posStart.north(2)).getBlock();
-            String blockName = block.getLocalizedName();
-
-            // Get player looking direction
-            String LookingDirection = Data.getSelfPlayerLookingDirection();
-            Chat.SendMessage(LookingDirection, "green");
-            int checkBlocks_PosX_Start = 0;
-            int checkBlocks_PosX_End = 0;
-            int checkBlocks_PosY_Start = 0;
-            int checkBlocks_PosY_End = 0;
-            int checkBlocks_PosZ_Start = 0;
-            int checkBlocks_PosZ_End = 0;
-
-            // Set the field to scan blocks in
-            if (LookingDirection.equals("EAST")) {
-                checkBlocks_PosX_Start = 0;
-                checkBlocks_PosX_End = 200;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 20;
-                checkBlocks_PosZ_End = 20;
-            }
-            else if (LookingDirection.equals("NORTH_EAST")) {
-                checkBlocks_PosX_Start = 0;
-                checkBlocks_PosX_End = 200;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 50;
-                checkBlocks_PosZ_End = 50;
-            }
-            else if (LookingDirection.equals("EAST_SOUTH")) {
-                checkBlocks_PosX_Start = 0;
-                checkBlocks_PosX_End = 200;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 0;
-                checkBlocks_PosZ_End = 70;
-            }
-            else if (LookingDirection.equals("SOUTH_WEST")) {
-                checkBlocks_PosX_Start = 200;
-                checkBlocks_PosX_End = 0;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 20;
-                checkBlocks_PosZ_End = 20;
-            }
-            else if (LookingDirection.equals("WEST")) {
-                checkBlocks_PosX_Start = 200;
-                checkBlocks_PosX_End = 0;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 20;
-                checkBlocks_PosZ_End = 20;
-            }
-            else if (LookingDirection.equals("WEST_NORTH")) {
-                checkBlocks_PosX_Start = 200;
-                checkBlocks_PosX_End = 0;
-
-                checkBlocks_PosY_Start = 50;
-                checkBlocks_PosY_End = 50;
-
-                checkBlocks_PosZ_Start = 50;
-                checkBlocks_PosZ_End = 50;
-            }
-
-
-            BlockPos pos1 = new BlockPos(posStart.getX()-checkBlocks_PosX_Start, posStart.getY()-checkBlocks_PosY_Start, posStart.getZ()-checkBlocks_PosZ_Start);
-            BlockPos pos2 = new BlockPos(posStart.getX()+checkBlocks_PosX_End, posStart.getY()+checkBlocks_PosY_End, posStart.getZ()+checkBlocks_PosZ_End);
-
-            // Find blocks around player
-            for (BlockPos blockPosAroundPlayer : BlockPos.getAllInBox(pos1, pos2)) {
-                int count_obsidian = 0;
-                Block blockAroundPlayer = Minecraft.getMinecraft().world.getBlockState(blockPosAroundPlayer).getBlock();
-                String blockNameAroundPlayer = blockAroundPlayer.getLocalizedName();
-
-//                Chat.SendMessage(blockNameAroundPlayer, "green");
-
-                if (blockAroundPlayer.getUnlocalizedName().contains("Red")) {
-                    Chat.SendMessage("here", "red");
-                }
-
-
-                if (blockNameAroundPlayer.equals("Dragon Egg")) {
-                    Chat.SendMessage("Found Dragon Egg", "red");
-
-                    // Get dragon egg position
-                    float dragonEggPos_X = blockPosAroundPlayer.getX();
-                    float dragonEggPos_Y = blockPosAroundPlayer.getY();
-                    float dragonEggPos_Z = blockPosAroundPlayer.getZ();
-
-                    // Find block around dragon egg
-                    BlockPos pos3 = new BlockPos(dragonEggPos_X-10, dragonEggPos_Y-2, dragonEggPos_Z-10);
-                    BlockPos pos4 = new BlockPos(dragonEggPos_X+10, dragonEggPos_Y+2, dragonEggPos_Z+10);
-                    for (BlockPos blockPosAroundEgg : BlockPos.getAllInBox(pos3, pos4)) {
-                        Block blockAroundEgg = Minecraft.getMinecraft().world.getBlockState(blockPosAroundEgg).getBlock();
-                        String blockNameAroundEgg = blockAroundEgg.getLocalizedName();
-
-                        if (blockNameAroundEgg.equals("Obsidian")) {
-                            count_obsidian++;
-                        }
-                    }
-
-                    Chat.SendMessage("Found " + count_obsidian + " blocks of obsidian around the egg", "green");
-
-                    // Get block at pos
-//                    BlockPos pos = new BlockPos(-213, 73, 341);
-//                    IBlockState ibs = Minecraft.getMinecraft().world.getBlockState(pos);
-//                    Block block = ibs.getBlock();
-//                    Chat.SendMessage(block.getLocalizedName(), "green");
-
-//                    String test = blockAroundPlayer.getBlockState().get
-
-//                    BlockPos pos = new BlockPos(blockAroundPlayer.getBlockState(pos));
-//
-//                    Chat.SendMessage(String.valueOf(p1), "red");
-                }
-
-
-            }
         }
     }
 

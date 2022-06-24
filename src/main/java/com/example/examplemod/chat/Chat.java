@@ -1,6 +1,7 @@
 package com.example.examplemod.chat;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentString;
@@ -9,7 +10,7 @@ import net.minecraft.util.text.event.ClickEvent;
 
 public class Chat {
     public static void SendMessage(String message, String color) {
-        EntityPlayer player = Minecraft.getMinecraft().player;
+        EntityPlayerSP player = Minecraft.getMinecraft().player;
 
         switch (color) {
             case "green":

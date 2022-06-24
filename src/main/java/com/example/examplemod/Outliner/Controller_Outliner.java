@@ -15,14 +15,14 @@ public class Controller_Outliner {
 
         Items_Outliner.setState(GlobalOutliner_Enabled);
         Players_Outliner.setState(GlobalOutliner_Enabled);
-        Arrows_Outliner.setState(GlobalOutliner_Enabled);
-        Blocks_Outliner.setState(GlobalOutliner_Enabled);
+//        Arrows_Outliner.setState(GlobalOutliner_Enabled);
+//        Blocks_Outliner.setState(GlobalOutliner_Enabled);
     }
 
     public static void UpdateOutliner() {
         Items_Outliner.setState(GlobalOutliner_Enabled);
         Players_Outliner.setState(GlobalOutliner_Enabled);
-        Arrows_Outliner.setState(GlobalOutliner_Enabled);
-        Blocks_Outliner.setState(GlobalOutliner_Enabled);
+//        Arrows_Outliner.setState(GlobalOutliner_Enabled);
+//        Blocks_Outliner.setState(GlobalOutliner_Enabled);
     }
 }
