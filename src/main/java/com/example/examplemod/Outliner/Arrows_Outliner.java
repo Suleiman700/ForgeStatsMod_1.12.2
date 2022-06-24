@@ -16,6 +16,11 @@ public class Arrows_Outliner {
         return Enabled;
     }
 
+    public static void setState(boolean state) {
+        Enabled = state;
+        re_enable();
+    }
+
     public static void re_enable() {
         List<Entity> entities = Minecraft.getMinecraft().world.loadedEntityList;
         for (int i = 0; i < entities.size(); i++) {

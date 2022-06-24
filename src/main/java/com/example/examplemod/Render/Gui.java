@@ -5,7 +5,10 @@ import com.example.examplemod.Items.Gold;
 import com.example.examplemod.Items.Iron;
 import com.example.examplemod.Items.Terracotta;
 import com.example.examplemod.Movements.BlockEdgeEvent;
+import com.example.examplemod.Outliner.Arrows_Outliner;
+import com.example.examplemod.Outliner.Items_Outliner;
 import com.example.examplemod.Outliner.Players_Outliner;
+import com.example.examplemod.Players.PlayerProjectileDamage;
 import com.example.examplemod.Sound.Sound;
 import com.example.examplemod.events.OnAttackEntity;
 import net.minecraft.client.Minecraft;
@@ -44,6 +47,14 @@ public class Gui extends GuiScreen {
     GuiButton players_glow_effect;
     final int PLAYERS_GLOW_EFFECT = 4;
 
+    GuiButton items_glow_effect;
+    final int ITEMS_GLOW_EFFECT = 5;
+
+    GuiButton arrows_glow_effect;
+    final int ARROWS_GLOW_EFFECT = 6;
+
+    GuiButton arrow_hit_target_info;
+    final int ARROW_HIT_TARGET_INFO = 7;
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
@@ -92,7 +103,10 @@ public class Gui extends GuiScreen {
         buttonList.add(toggle_announce_target_health = new GuiButton(TOGGLE_ANNOUNCE_TARGET_HEALTH, 5, 55, 200, 20, "Announce Target Health: " + OnAttackEntity.getSpeakHealthNumberState()));
         buttonList.add(announce_target_health_volume = new GuiSlider(ANNOUNCE_TARGET_HEALTH_VOLUME, 206, 55, 200, 20, "Volume ", "", 0, 1, Sound.getVolume(), true, true));
 
-        buttonList.add(players_glow_effect = new GuiButton(PLAYERS_GLOW_EFFECT, 5, 80, 100, 20, "ESP: " + Players_Outliner.getState()));
+        buttonList.add(players_glow_effect = new GuiButton(PLAYERS_GLOW_EFFECT, 5, 80, 150, 20, "Players ESP: " + Players_Outliner.getState()));
+        buttonList.add(items_glow_effect = new GuiButton(ITEMS_GLOW_EFFECT, 5, 105, 150, 20, "Items ESP: " + Items_Outliner.getState()));
+        buttonList.add(arrows_glow_effect = new GuiButton(ARROWS_GLOW_EFFECT, 5, 130, 150, 20, "Arrows ESP: " + Arrows_Outliner.getState()));
+        buttonList.add(arrow_hit_target_info = new GuiButton(ARROW_HIT_TARGET_INFO, 5, 155, 200, 20, "Arrows Hit Info: " + PlayerProjectileDamage.getState()));
         super.initGui();
     }
 
@@ -121,7 +135,19 @@ public class Gui extends GuiScreen {
                 break;
             case PLAYERS_GLOW_EFFECT:
                 Players_Outliner.toggleState();
-                players_glow_effect.displayString = "ESP: " + Players_Outliner.getState();
+                players_glow_effect.displayString = "Players ESP: " + Players_Outliner.getState();
+                break;
+            case ITEMS_GLOW_EFFECT:
+                Items_Outliner.toggleState();
+                items_glow_effect.displayString = "Items ESP: " + Items_Outliner.getState();
+                break;
+            case ARROWS_GLOW_EFFECT:
+                Arrows_Outliner.toggleState();
+                arrows_glow_effect.displayString = "Arrows ESP: " + Arrows_Outliner.getState();
+                break;
+            case ARROW_HIT_TARGET_INFO:
+                PlayerProjectileDamage.toggleState();
+                arrow_hit_target_info.displayString = "Arrows Hit Info: " + PlayerProjectileDamage.getState();
                 break;
         }
         super.actionPerformed(button);

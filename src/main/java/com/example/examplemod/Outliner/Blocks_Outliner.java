@@ -28,6 +28,10 @@ public class Blocks_Outliner {
         return Enabled;
     }
 
+    public static void setState(boolean state) {
+        Enabled = state;
+        re_enable();
+    }
 
     public static void re_enable() {
 //        List<Entity> entities = Minecraft.getMinecraft().world.loadedEntityList;
@@ -46,7 +50,7 @@ public class Blocks_Outliner {
             Enabled = true;
         }
 
-        Chat.SendMessage("im here", "green");
+//        Chat.SendMessage("im here", "green");
 
 
         // Get block at pos

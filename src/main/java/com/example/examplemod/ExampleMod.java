@@ -1,7 +1,7 @@
 package com.example.examplemod;
 
-import com.example.examplemod.Players.PlayerTakeDamage;
-import com.example.examplemod.Render.AABBDebug;
+import com.example.examplemod.Players.PlayerProjectileDamage;
+//import com.example.examplemod.Render.AABBDebug;
 import com.example.examplemod.Render.Gui;
 import com.example.examplemod.Keys.KeyInputEvent;
 import com.example.examplemod.Movements.BlockEdgeEvent;
@@ -46,10 +46,10 @@ public class ExampleMod
         // Keybindings
         MinecraftForge.EVENT_BUS.register(new KeyInputEvent());
 
-        MinecraftForge.EVENT_BUS.register(new PlayerTakeDamage());
+        MinecraftForge.EVENT_BUS.register(new PlayerProjectileDamage());
 
 
-        MinecraftForge.EVENT_BUS.register(new AABBDebug());
+//        MinecraftForge.EVENT_BUS.register(new AABBDebug());
 
         // Movement
 //        FMLCommonHandler.instance().bus().register(new JumpEvent());

@@ -14,6 +14,11 @@ public class Players_Outliner {
         return Enabled;
     }
 
+    public static void setState(boolean state) {
+        Enabled = state;
+        re_enable();
+    }
+
     public static void re_enable() {
         for (EntityPlayer p : Minecraft.getMinecraft().world.playerEntities) {
             p.setGlowing(Enabled);

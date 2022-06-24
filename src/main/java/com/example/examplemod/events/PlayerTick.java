@@ -65,27 +65,42 @@ public class PlayerTick {
             String eventPlayerName = event.player.getName();
 
             if (eventPlayerName.contains(MCPlayerName) || MCPlayerName.contains(eventPlayerName)) {
+                EntityPlayer player = event.player;
 
-                if (tickCounter % 100 == 0 && tickCounter < 500) {
-                    EntityPlayer player = event.player;
+                // Check player inventory
+                InventoryCheck.checkInventory(player);
 
-                    // Check player inventory
-                    InventoryCheck.checkInventory(player);
+                // Check player health
+                float playerHealth = player.getHealth();
+                Health.checkHealth(player, playerHealth);
 
-                    // Check player health
-                    float playerHealth = player.getHealth();
-                    Health.checkHealth(player, playerHealth);
-
-                    // Check sneaking
+                // Check sneaking
 //                    boolean sneakState = player.isSneaking();
 //                    Sneak.storeSneaking(sneakState);
 
-                    // Re-enable outliner, Because new dropped items & players need to be set glowing true
-                    Controller_Outliner.UpdateOutliner();
-                }
+                // Re-enable outliner, Because new dropped items & players need to be set glowing true
+                Controller_Outliner.UpdateOutliner();
 
-                else if (tickCounter > 500) tickCounter = 0;
-                tickCounter++;
+//                if (tickCounter % 100 == 0 && tickCounter < 500) {
+//                    EntityPlayer player = event.player;
+//
+//                    // Check player inventory
+//                    InventoryCheck.checkInventory(player);
+//
+//                    // Check player health
+//                    float playerHealth = player.getHealth();
+//                    Health.checkHealth(player, playerHealth);
+//
+//                    // Check sneaking
+////                    boolean sneakState = player.isSneaking();
+////                    Sneak.storeSneaking(sneakState);
+//
+//                    // Re-enable outliner, Because new dropped items & players need to be set glowing true
+//                    Controller_Outliner.UpdateOutliner();
+//                }
+//
+//                else if (tickCounter > 500) tickCounter = 0;
+//                tickCounter++;
             }
         }
     }
