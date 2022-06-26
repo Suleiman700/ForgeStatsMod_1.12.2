@@ -14,9 +14,21 @@ import com.example.examplemod.Players.PlayerProjectileDamage;
 import com.example.examplemod.Sound.Sound;
 import com.example.examplemod.events.OnAttackEntity;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.*;
+import net.minecraft.client.gui.inventory.GuiInventory;
+import net.minecraft.client.renderer.BufferBuilder;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.Vec3d;
+import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.client.config.GuiSlider;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL30;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -81,6 +93,9 @@ public class Gui extends GuiScreen {
         drawString(Minecraft.getMinecraft().fontRenderer, Gold.getStats(), centerX+5, centerY+20, 0xffffff);
         drawString(Minecraft.getMinecraft().fontRenderer, Iron.getStats(), centerX+5, centerY+35, 0xffffff);
         drawString(Minecraft.getMinecraft().fontRenderer, Terracotta.getStats(), centerX+5, centerY+50, 0xffffff);
+
+//        GuiInventory.drawEntityOnScreen(50, 50, 50, (float)(500) - 1, (float)(500) - 1, Minecraft.getMinecraft().player);
+
 
 //        Minecraft.getMinecraft().setRenderViewEntity.setPositionAndRotation(player.posX + x, player.posY - 1.63 + y, player.posZ + z, player.rotationYaw, player.rotationPitch);
 

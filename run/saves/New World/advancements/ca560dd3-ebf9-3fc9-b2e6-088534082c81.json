@@ -107,6 +107,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-06-25 12:24:53 +0300"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/magenta_wool": {
     "criteria": {
       "has_white_wool": "2022-05-28 15:35:17 +0300"

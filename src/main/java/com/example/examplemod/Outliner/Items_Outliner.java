@@ -1,5 +1,6 @@
 package com.example.examplemod.Outliner;
 
+import com.example.examplemod.chat.Chat;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -24,6 +25,8 @@ public class Items_Outliner {
         for (int i = 0; i < entities.size(); i++) {
             if (entities.get(i) instanceof EntityItem && entities.get(i) instanceof EntityItem) {
                 entities.get(i).setGlowing(Enabled);
+                entities.get(i).setCustomNameTag("hello");
+                entities.get(i).setAlwaysRenderNameTag(true);
             }
         }
     }

@@ -6,6 +6,7 @@ import com.example.examplemod.Inventory.InventoryCheck;
 //import com.example.examplemod.Players.PlayersCoords;
 import com.example.examplemod.Outliner.Controller_Outliner;
 import com.example.examplemod.Players.PlayersHealth;
+import com.example.examplemod.Render.RemoteCamera;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -21,6 +22,11 @@ public class PlayerTick {
 
     @SubscribeEvent
     public void playerTick(TickEvent.PlayerTickEvent event) {
+
+        // Update remote camera rotation based on player rotation
+        if (RemoteCamera.Enabled) {
+            RemoteCamera.updateCamRotation();
+        }
 
         String MCPlayerName = Data.getCustomPlayerName();
 

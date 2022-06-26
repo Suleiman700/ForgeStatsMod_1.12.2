@@ -5,6 +5,7 @@ import com.example.examplemod.Players.PlayerProjectileDamage;
 import com.example.examplemod.Render.Gui;
 import com.example.examplemod.Keys.KeyInputEvent;
 import com.example.examplemod.Movements.BlockEdgeEvent;
+import com.example.examplemod.Render.PopUpWindow;
 import com.example.examplemod.Render.TextOnScreen;
 import com.example.examplemod.chat.Chat;
 import com.example.examplemod.chat.Commands;
@@ -50,6 +51,7 @@ public class ExampleMod
         MinecraftForge.EVENT_BUS.register(new PlayerProjectileDamage());
 
         MinecraftForge.EVENT_BUS.register(new TextOnScreen());
+        MinecraftForge.EVENT_BUS.register(new PopUpWindow());
 
 
 //        MinecraftForge.EVENT_BUS.register(new AABBDebug());
